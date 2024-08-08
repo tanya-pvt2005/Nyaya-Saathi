@@ -1,0 +1,408 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+/* navbar */
+.nav {
+    background-color: #2b2e30; 
+    padding: 10px 20px; 
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center; 
+}
+
+.nav ul {
+    list-style: none; 
+    display: flex; 
+}
+
+.nav ul li {
+    margin: 0 15px; 
+    color: #fff; 
+    font-size: 18px; 
+    padding:10px;
+    border-radius: 0.5rem;
+    cursor: pointer; 
+}
+
+.nav ul li:hover {
+    /* text-decoration: underline;  */
+    background-color: #2b2e30;
+}
+
+.nav input {
+    padding: 5px 10px; 
+    font-size: 0.9rem; 
+    border: 1px solid #ccc; 
+    border-radius: 0.2rem;
+    margin-right: 1%; 
+}
+
+.nav button {
+    padding: 6px 12px; 
+    font-size: 16px; 
+    color: #fff; 
+    background-color: #007ab3; 
+    border: none; 
+    border-radius: 0.2rem; 
+    cursor: pointer; 
+}
+
+.nav button:hover {
+    background-color: #0056b3; 
+}
+
+/* main div */
+
+.main-cont {
+    position: relative;
+    /* background-attachment:scroll; */
+    display: flex;
+    height:570px;
+    background-color: rgba(32, 28, 28, 0.885);
+    width:100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:1%;
+    padding: 20px;
+    /* max-width: 800px; */
+    margin: 0 auto;
+}
+
+.main-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:url("/images/bg1.jpg");
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* To place it behind other elements */
+}
+
+.main-head {
+    font-size: 2em;
+    color: #fff; 
+    padding: 20px;
+    color:rgb(237, 219, 114);
+    background-image:linear-gradient(to right,rgb(255, 238, 0),rgb(250, 240, 157),rgb(255, 255, 129),rgb(144, 137, 31));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 10%; 
+    width:500px;
+   
+
+}
+.main-left{
+    margin-left: 5%;
+}
+.main-info {
+    /* background: rgba(255, 255, 255, 0.128); */
+    padding: 20px;
+    border-radius: 5px;
+    margin-top:0%;
+    width: 88%;
+}
+
+.main-info p {
+    margin-bottom: 5%;
+    color:white;
+    font-size: 1.4rem;
+    text-align: justify;
+}
+
+.main-info button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-image:linear-gradient(to right, rgb(213, 199, 0),rgb(255, 242, 121),rgb(255, 255, 129),rgb(204, 190, 3));
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.main-info button:hover {
+    background-color: #0056b3;
+}
+.main-right{
+    background-image: url("/images/emblem.jpeg");
+    background-size: cover;
+    height:90%;
+    width: 40%;
+    border-radius: 1rem;
+    margin-right: 5%;
+}
+
+/* hero section */
+/* Global Styles */
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333333; /* Charcoal */
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h2, h3, p, button {
+    margin: 0;
+    padding: 0;
+}
+
+/* Problem Section Styling */
+
+.problem {
+    background-color: #ffffff; /* White */
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    margin: 40px auto;
+    border-top: 5px solid #000000; /* Gold */
+    position: relative;
+    overflow: hidden;
+}
+
+.problem-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.problem-header h2 {
+    font-size: 2.5rem;
+    color: #1E3A5F; /* Blue */
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.problem-header .intro {
+    font-size: 1.2rem;
+    color: #FFA500; /* Orange */
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+.problem-content {
+    color: #333333; /* Charcoal */
+    line-height: 1.6;
+}
+
+.problem-grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+.problem-image {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+.problem-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.problem-text {
+    flex: 2;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.problem-text p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.problem-text .highlight {
+    font-size: 1.2rem;
+    color: #1E3A5F; /* Blue */
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.learn-more-btn {
+    padding: 12px 24px;
+    background-color: #FFD700; /* Gold */
+    color: #000000; /* Black */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.learn-more-btn:hover {
+    background-color: #FFC300; /* Slightly darker gold for hover effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* categories */
+/* Law Categories Section Styling */
+
+.law-categories {
+    background-color: #ececec; /* Light gray background for contrast */
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin: 40px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+}
+
+.law-categories-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.law-categories-header h2 {
+    font-size: 2.5rem;
+    color: #000000; /* Blue */
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.law-categories-header .intro {
+    font-size: 1.2rem;
+    color: #FFA500; /* Orange */
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.law-categories-content {
+    color: #333333; /* Charcoal */
+    line-height: 1.6;
+}
+
+.law-category-item {
+    background-color: #ffffff; /* White */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.law-category-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.law-category-item .icon {
+    font-size: 3rem;
+    color: #FFD700; /* Gold */
+    margin-bottom: 15px;
+}
+
+.law-category-item h3 {
+    font-size: 1.5rem;
+    color: #1E3A5F; /* Blue */
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.law-category-item p {
+    font-size: 1rem;
+    color: #555555; /* Dark gray */
+    margin-bottom: 20px;
+}
+
+.learn-more-btn {
+    padding: 12px 24px;
+    background-color: #1E3A5F; /* Blue */
+    color: #ffffff; /* White */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.learn-more-btn:hover {
+    background-color: #0d2c4b; /* Darker blue for hover effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .law-category-item {
+        padding: 15px;
+    }
+
+    .law-category-item h3 {
+        font-size: 1.3rem;
+    }
+
+    .law-category-item p {
+        font-size: 0.9rem;
+    }
+
+    .learn-more-btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
+
+/* hero marquee animation */
+.hero-marquee {
+    height: 300px;
+    background-color: #ffffff;
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap; 
+}
+
+.marquee-wrapper {
+    display: flex;
+    align-items: center;
+    padding-top:2%;
+    gap: 10%;
+    animation: move 20s linear infinite; /* Animation to move the cards */
+}
+
+.cards {
+    height: 250px;
+    width: 350px; /* Fixed width for consistent card size */
+    background-color: rgba(255, 255, 255, 0.369);
+    flex: 0 0 auto; /* Prevent shrinking or growing */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    color: #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes move {
+    from {
+        transform: translateX(0); /* Start at initial position */
+    }
+    to {
+        transform: translateX(-100%); /* Move to the left end */
+    }
+}
+
+/* laws and rights */
+.laws-rights{
+    height: 600px;
+    background-color: #2b2e30;
+}
+
+
+/* about us */

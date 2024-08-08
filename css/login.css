@@ -1,0 +1,58 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+.main {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100vw; 
+    height: 100vh; 
+    display: flex; 
+    background-color: black;
+}
+
+.blank, .main-image {
+    flex: 1; 
+}
+
+.blank {
+    background-color: #f0f0f0; 
+}
+
+.main-image {
+    background-color: #d0d0d0; 
+    background-image: url('/images/law-bg.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    opacity: 0.45;
+}
+
+/* login box*/
+.login-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 10px solid #000000;
+    height:400px;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.login-image {
+    height: 150px; /* Adjust height as needed */
+    width: 100%;
+    background-color: #621a1a;
+    margin-bottom: 10px; /* Optional: adjust spacing */
+}
+
+.login {
+    height: 200px; /* Adjust height as needed */
+    width: 100%;
+    background-color: #e0e0e0;
+}
