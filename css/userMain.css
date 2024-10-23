@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0;   
+    font-family: "Rubik";
+    
+}
+.navbar {
+    background-color: #ffffff;
+    padding:3%;
+    height:30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 0 10px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-align: center;
+    color:black;
+    padding: 12px ;
+    font-family: 'Rubik';
+    text-decoration: none;
+    transition: background-color 0.3s;
+    
+}
+
+.navbar ul li a:hover {
+    background-color: #b0c9f4;
+}
+
+.main-section{
+  /* background-image: url(/images/—Pngtree—lady\ justice\ statue\ a\ goddess_13067077.png); */
+  background-attachment: fixed;
+  background-color: #ffffff;
+  backdrop-filter: grayscale(0.1);
+  background-size: cover;
+  /* color:#b0c9f4; */
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    flex-direction: row;
+    height:100vh;
+}
+.left{
+  /* border: 3px solid green; */
+  height: 100%;
+  align-items: center;
+  padding:3%;
+  justify-content:left;
+  display: flex;
+}
+.rig{
+  /* border: 3px solid green; */
+  height: 100%;
+  width:50%;  
+  background-image: url(/images/Judge-pana.png);
+  background-size: contain;
+  align-items: center;
+  padding:3%;
+  justify-content:left;
+  display: flex;
+}
+.title{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+}
+.title h1{
+    font-size: 5em;
+}
+.title p{
+    font-size: 1.3em;
+    line-height: 3;
+}
+
+button {
+  margin-right: 2%;
+  padding: 3%;
+  width:20%;
+  font-size: 1em;
+  background-color: #fc5c7d;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.constitution{
+  height:80vh;
+  display: flex;
+  align-items: center ;
+  justify-content: center;
+  margin-top:5%;
+}
+.laptop{
+  
+}
+.cards{
+  height:90px;
+  width:100px;
+  background-color:  #fc5c7d;
+  ;
+}
+video{
+  position: absolute;
+  left:19%;
+  top:234%;
+  height:472px;
+  width:475px;;
+  border:none;
+}
+
+.fundamental-rights {
+  text-align: center; /* Center align the heading */
+  padding: 20px;
+}
+
+.centered-heading {
+  margin-bottom: 70px; /* Add space below the heading */
+  /* margin-top: 20px; */
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.rights-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns with equal width */
+  gap: 50px; /* Gap between grid items */
+  width: 1000px;
+  height: 600px;
+  /* background-color: #b0c9f4; */
+  margin: 0 auto; /* Center the grid container */
+}
+
+.right {
+  background-color: #f9ebe100; /* Background color to make them visible */
+  padding: 20px; /* Increase padding for more space inside */
+  text-align: center; /* Center align text inside each grid item */
+   /* Add a border to make the divs more visible */
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   gap:30px;
+  font-size: 18px; /* Font size for any text inside */
+  font-weight: bold;
+}
+
+.centered-right {
+  grid-column: 1 / span 2; /* Span across both columns */
+  margin: 0 auto; /* Center within the row */
+}
+.div{
+  height:20vh;
+  margin-top: 10px;
+  background-color: #ffffff;
+}
+
+.grid-container {
+  padding: 5%;
+  display: grid;
+  grid-template-columns: repeat(3, 400px); /* 2 cells per row */
+  gap: 10px;
+  justify-content: center;
+}
+
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 200px;
+  color: white;
+  cursor: pointer;
+  /* border:2px dashed black; */
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 2rem;
+  text-align: center;
+}
+.last-cell {
+  grid-column: 2 / 3; /* Centers the last cell in its row */
+}
+
+/* compl */
+/* Complaint Form Container */
+.filecompl{
+  height:100vh;
+  width:100vw;
+  background-image: url(/images/bg2.png);
+  margin-top: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.complaint-form-container {
+
+  
+  background-color: #fff;
+  /* background-image: url(/images/bg2.png); */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.599);
+  width: 800px;
+  text-align: left;
+  overflow-y: scroll;
+  height:80%;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+h2 {
+  color: #333;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  font-size: 16px;
+  box-sizing: border-box;
+  background-color: #f3f9fb;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #6a82fb;
+  box-shadow: 0 0 8px rgba(106, 130, 251, 0.3);
+  outline: none;
+}
+
+/* File Input */
+.form-group input[type="file"] {
+  font-size: 14px;
+  border: none;
+  padding: 0;
+  color: #555;
+}
+
+/* Submit Button */
+button[type="submit"] {
+  background-color: #6a82fb;
+  background-image: linear-gradient(135deg, #fc5c7d 0%, #6a82fb 100%);
+  color: #fff;
+  border: none;
+  padding: 15px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.4s ease, box-shadow 0.3s ease;
+  width: 100%;
+  font-weight: bold;
+}
+
+button[type="submit"]:hover {
+  background-color: #fc5c7d;
+  background-image: linear-gradient(135deg, #fc5c7d 0%, #6a82fb 100%);
+  box-shadow: 0 5px 20px rgba(106, 130, 251, 0.4);
+}
+
+/* Smooth Form Entrance */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

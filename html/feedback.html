@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color:rgb(243, 243, 247);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            gap:10%;
+            justify-content: center;
+        }
+
+        .feedback-container {
+            background-color: #f0f4f8;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            padding: 3%;
+            width: 100%;
+            max-width: 400px;
+            border: 1px solid #5A60F1;
+        }
+        #bubble{
+            position:absolute;
+            right:9%;
+            z-index:-2;
+        }
+
+        h2 {
+            text-align: center;
+            color: #5A60F1;
+        }
+
+        form {
+            display: flex;
+            /* align-items: center; */
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 5px;
+            color:#5A60F1 ;
+        }
+
+        input, textarea {
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            width: 95%;
+            font-size: 14px;
+        }
+
+        input:focus, textarea:focus {
+            border-color: #5A60F1;
+            outline: none;
+        }
+
+        button {
+            background-color: #5A60F1;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #5A60F1;
+        }
+    </style>
+</head>
+<body>
+    <div class="feedback-container">
+        <h2>Feedback Form</h2>
+        <form action="#" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <img src="/images/Webinar-cuate.png" height="500">
+    <!-- <img id="bubble" src="/images/3d-glassy-transparent-glass-bubble.png" height="500"> -->
+
+</body>
+</html>

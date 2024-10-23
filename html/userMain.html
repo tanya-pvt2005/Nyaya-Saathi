@@ -1,12 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Main Page</title>
-    <link rel="stylesheet" href="/css/userMain.css">
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UserMain</title>
+    <link rel="stylesheet" href="/css/userMain.css" />
+    <link rel="stylesheet" href="/css/main2.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">FEEDBACK</a></li>
+        <li><a href="#">JOIN US</a></li>
+        <li><a href="#">KNOW YOUR RIGHTS</a></li>
+        <li><a href="#">BLOGS</a></li>
+      </ul>
+    </div>
+    <div class="main-section">
+      <div class="left">
+        <p style="text-align: justify;">
+        <div class="title">
+          <h1>Know Your Rights</h1>
+          <p>
+            Be aware as a responsible citizen of India and combat with power
+          </p>
+          <button id="knowmore">Know More</button>
+        </div>
+      </p>
+      </div>
+      <div class="rig">
+
+      </div>
+    </div>
+
+    <!-- video modal -->
+    <div id="videoModal" class="modal">
+      <div class="modal-content">
+        <div class="close-btn" id="closeModalBtn">&times;</div>
+        <video controls>
+          <source src="/intro.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+
+    <!-- explaination -->
+    <div class="grid-container">
+      <div
+        class="grid-item"
+        style="background-color: #eaf1ff; color: rgb(35, 2, 76)"
+      >
+        Constitutional and Civil Rights
+      </div>
+      <div
+        class="grid-item"
+        style="background-color: #eaf1ff; color: rgb(35, 2, 76)"
+      >
+        Criminal Law
+      </div>
+      <div
+        class="grid-item"
+        style="background-color: #eaf1ff; color: rgb(35, 2, 76)"
+      >
+        Consumer Protection Law
+      </div>
+      <div
+        class="grid-item"
+        style="background-color: #eaf1ff; color: rgb(35, 2, 76)"
+      >
+        Family Law
+      </div>
+      <div
+        class="grid-item"
+        style="background-color: #eaf1ff; color: rgb(35, 2, 76)"
+      >
+        Labor Law
+      </div>
+      <div
+        class="grid-item"
+        style="background-color: #eaf1ff; color: rgb(35, 2, 76)"
+      >
+        Taxation Law
+      </div>
+      <div
+        class="grid-item"
+        style="background-color: #eaf1ff; color: rgb(35, 2, 76)"
+      >
+        Traffic and Motor Vehicle Law
+      </div>
+      <div
+        class="grid-item"
+        style="background-color: #eaf1ff; color: rgb(35, 2, 76)"
+      >
+        Property Law
+      </div>
+      <div
+        class="grid-item"
+        style="background-color: #eaf1ff; color: rgb(35, 2, 76)"
+      >
+        RTI Laws
+      </div>
+      <!-- <div
+        class="grid-item last-cell"
+        style="background-color: #eaf1ff; color: rgb(35, 2, 76)"
+      >
+        Environmental Laws
+      </div> -->
+    </div>
+
+    <!-- modal main -->
+
+    <div id="dynamicModal" class="dmodal">
+      <div class="dmodal-content">
+        <div class="dclose">&times;</div>
+        <div class="dmodal-header" id="dmodalHeader">CATEGORY</div>
+        <div class="dmodal-body">
+          <div class="dmodal-main" id="dmodalMain">
+            <h3>List of Rights</h3>
+            <ul class="rights-list">
+              <li>
+                <h4>Right to Equality</h4>
+                <p>
+                  Every individual is entitled to equal treatment before the law
+                  without any discrimination.
+                </p>
+              </li>
+              <li>
+                <h4>Right to Freedom of Speech</h4>
+                <p>
+                  The right to express one's opinions and ideas without fear of
+                  government retaliation or censorship.
+                </p>
+              </li>
+              <li>
+                <h4>Right to Privacy</h4>
+                <p>
+                  Individuals have the right to personal privacy and protection
+                  from government intrusion.
+                </p>
+              </li>
+              <li>
+                <h4>Right to Education</h4>
+                <p>
+                  Type in to search for legal amenities offered the government
+                  for you
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="dmodal-side" id="dmodalSide">
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="Search Rights..."
+              oninput="searchRights()"
+            />
+            <p>
+              Type in to search for legal amenities offered the government for
+              you
+            </p>
+          </div>
+        </div>
+        <div class="dmodal-footer" id="dmodalFooter">
+          <button class="dmodal-btn" onclick="alert('Further Action!')">
+            Learn More
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="fundamental-rights">
+      <h1 class="centered-heading">Your Fundamental Rights</h1>
+      <div class="rights-grid">
+        <div class="right">
+          Right to Equality
+          <div class="icons">
+            <img src="/images/human-rights.png" height="100" />
+          </div>
+        </div>
+        <div class="right">
+          Right to Freedom
+          <div class="icons">
+            <img src="/images/freedom.png" height="100" />
+          </div>
+        </div>
+        <div class="right">
+          Right against Exploitation
+          <div class="icons">
+            <img src="/images/exploitation.png" height="100" />
+          </div>
+        </div>
+        <div class="right">
+          Cultural and Educational Rights
+          <div class="icons">
+            <img src="/images/cultural-diversity.png" height="100" />
+          </div>
+        </div>
+        <div class="right">
+          Right to Constitutional Remedies
+          <div class="icons">
+            <img src="/images/book.png" height="100" />
+          </div>
+        </div>
+        <div class="right">
+          Right to freedom of Religion
+          <div class="icons">
+            <img src="/images/religion.png" height="100" />
+          </div>
+        </div>
+        <!-- <div class="right centered-right">7</div> -->
+      </div>
+    </div>
+
+    <div class="filecompl">
+      <div class="complaint-form-container">
+        <h2>File a Complaint</h2>
+        <p>If you have any issues, please fill out the form below and we’ll get back to you as soon as possible.</p>
+        
+        <form action="#" method="POST" enctype="multipart/form-data">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+          </div>
+  
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Enter subject of your complaint" required>
+          </div>
+  
+          <div class="form-group">
+            <label for="description">Complaint Description</label>
+            <textarea id="description" name="description" placeholder="Describe your issue" rows="5" required></textarea>
+          </div>
+  
+          <div class="form-group">
+            <label for="file">Attach File (Optional)</label>
+            <input type="file" id="file" name="file">
+          </div>
+  
+          <div class="form-group">
+            <button type="submit">Submit Complaint</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="/js/main.js"></script>
+    <script src="/js/search.js"></script>
+  </body>
 </html>
